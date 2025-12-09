@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Cagliostro&family=Caveat+Brush&family=Coiny&family=Fredoka:wght@600&family=Playwrite+DE+Grund:wght@100..400&family=Preahvihear&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Cagliostro&family=Caveat+Brush&family=Coiny&family=Fredoka:wght@600&family=Mallanna&family=Playwrite+DE+Grund:wght@100..400&family=Preahvihear&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0;
+}
+header{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    align-items: center;
+    border-bottom: 2px solid #D88443;
+    background-color: #FDF0DB;
+    padding: 10px 15px;
+}
+.container-logo{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+.container-logo img{
+    width: 70px;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    list-style: none;
+}
+header h1{
+    font-family: "Anuphan", sans-serif;
+}
+header a{
+    font-family: "Mallanna", sans-serif;
+    font-size: 20px;
+    color: #311907;
+    text-decoration: none;
+    font-weight: bolder;
+    transition: 0.2s ease-out;
+}
+header a:hover{
+    color: #D88443;
+    border-bottom: 2px solid #D88443;   
+}
+.container-location{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1rem;
+    width: fit-content;
+}
+.container-location img{
+    width: 20px;
+}
