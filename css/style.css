@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Mallanna", sans-serif; /*parrafo */
+
 }
 
 body {
@@ -133,7 +135,7 @@ body {
 }
 .sabores {
   padding: 60px 20px;
-  background-color: #fdf0db;
+  background-color:#B8CDB4;
 }
 
 .sabores h2 {
