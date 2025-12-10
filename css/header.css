@@ -1,50 +1,102 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
-header{
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    align-items: center;
-    border-bottom: 2px solid #D88443;
-    background-color: #FDF0DB;
-    padding: 10px 15px;
+
+header {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  border-bottom: 2px solid #D88443;
+  background-color: #FDF0DB;
+  padding: 10px 15px;
 }
-.container-logo{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
+
+.container-logo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container-logo img {
+  width: 70px;
+}
+
+nav ul {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+}
+
+header h1 {
+  font-family: "Anuphan", sans-serif;
+}
+
+header a {
+  font-family: "Mallanna", sans-serif;
+  font-size: 20px;
+  color: #311907;
+  text-decoration: none;
+  font-weight: bolder;
+  transition: 0.2s ease-out;
+}
+
+header a:hover {
+  color: #D88443;
+  border-bottom: 2px solid #D88443;
+}
+
+.container-location {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+}
+
+.container-location img {
+  width: 20px;
+}
+
+/* Media Query para tablets y dispositivos medianos */
+@media (max-width: 768px) {
+  header {
+    grid-template-columns: 1fr;
     gap: 1rem;
-}
-.container-logo img{
-    width: 70px;
-}
-nav ul{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    list-style: none;
-}
-header h1{
-    font-family: "Anuphan", sans-serif;
-}
-header a{
-    font-family: "Mallanna", sans-serif;
-    font-size: 20px;
-    color: #311907;
-    text-decoration: none;
-    font-weight: bolder;
-    transition: 0.2s ease-out;
-}
-header a:hover{
-    color: #D88443;
-    border-bottom: 2px solid #D88443;   
-}
-.container-location{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
+    padding: 15px;
+  }
+
+  .container-logo {
+    justify-content: center;
+  }
+
+  nav ul {
+    flex-direction: column;
     gap: 1rem;
-    width: fit-content;
+    align-items: center;
+    padding: 0;
+  }
+
+  .container-location {
+    justify-self: center;
+  }
 }
-.container-location img{
-    width: 20px;
+
+/* Media Query para móviles */
+@media (max-width: 480px) {
+  .container-logo img {
+    width: 50px;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  header a {
+    font-size: 16px;
+  }
+
+  nav ul {
+    gap: 0.5rem;
+  }
 }
