@@ -162,7 +162,8 @@ body {
 
 .sabor-item p {
   margin-top: 10px;
-  font-size: 1.2rem;
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
   color: #2c1810;
 }
 
