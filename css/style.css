@@ -227,6 +227,69 @@ body {
     max-width: 500px;
   }
 }
+/* Novedades */
+.granos-img{
+    width: 74%;
+    height: auto;
+    max-width: 600px;
+    margin-top: 2rem;
+}
+.postres{
+    width: 74%;
+    height: auto;
+    max-width: 600px;
+    margin-top: 2rem;
+}
+.historia {
+    width: 100%;  /* Ancho reducido */
+    height: 1800px;  /* Altura mayor */
+    max-width: 600px;
+    min-height: 500px;
+    margin-top: -4rem;
+    object-fit: cover;
+    object-position: center top;  /* Enfoca la parte superior */
+    display: block;
+    padding-right: 30px;
+}
+.title-novedades{
+    font-size: 2.5rem;
+    margin-top: -10rem;
+    padding-left: 2rem;
+    color: rgb(255, 255, 255);
+    
+}
+.title-2{
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding-left: 2rem;
+    color: #2c1810; 
+}
+.posiciones{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    margin-top: -20px;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+.text-novedades{
+    font-size: 1.2rem;
+    margin-top: -10px;
+    padding-left: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(255, 255, 255);
+    border: solid 2px black;
+    border-radius: 0px 0px 20px 20px;
+    width: fit-content;
+    width: 74%;
+}
+.posiciones picture{
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+
 
 /* Tablets medianas */
 @media screen and (max-width: 768px) {
