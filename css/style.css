@@ -6,7 +6,6 @@
   font-family: "Mallanna", sans-serif; /*parrafo */
 
 }
-
 body {
   padding: 0;
   margin: 0;
@@ -165,7 +164,38 @@ body {
   font-size: 1.2rem;
   color: #2c1810;
 }
-
+/* CSS UBICACION */
+.ubicacion{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  background-color: #d19a63;
+/*   margin: 4rem; */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.ubicacion h1{
+  font-size: 50px;
+  padding: 3rem 2rem 0 2rem;
+}
+.contenedor-izquierdo-ubicacion{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contenedor-izquierdo-ubicacion button{
+    font-size: 25px;
+    padding: 8px 40px;
+    line-height: 1;
+    background-color: #B8CDB4;
+    border-radius: 50px;
+    border: none;
+    width: 100px;
+    margin: 1rem 0 4rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.contenedor-izquierdo-ubicacion button:hover{
+    transform: scale(1.05)
+}
 /* --------------------------------- */
 /* 📱 RESPONSIVE CSS */
 /* --------------------------------- */
@@ -191,6 +221,9 @@ body {
   .seleccion img {
     width: 280px;
     height: 280px;
+  }
+  .ubicacion iframe{
+    max-width: 500px;
   }
 }
 
@@ -246,6 +279,9 @@ body {
   
   .sabores h2 {
     font-size: 2rem;
+  }
+  .ubicacion iframe{
+    max-width: 300px;
   }
 }
 
