@@ -3,14 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Mallanna", sans-serif; /*parrafo */
-
 }
 body {
   padding: 0;
   margin: 0;
   background-color: #fdf0db;
-  font-family: Arial, sans-serif;
+  font-family: "Delius", cursive;
 }
 
 /* HERO (imagen + textos encima) */
@@ -71,6 +69,7 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
   font-weight: 600;
+  font-family: "Delius", cursive;
 }
 
 .boton:hover {

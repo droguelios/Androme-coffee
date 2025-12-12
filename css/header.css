@@ -28,8 +28,14 @@ nav ul {
   list-style: none;
 }
 
-header h1 {
-  font-family: "Anuphan", sans-serif;
+header .font-delicious{
+  font-family: "Damion", cursive;
+  font-size: 40px;
+}
+header .font-coffe{
+    font-family: "Delius", cursive;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 header a {
@@ -39,6 +45,7 @@ header a {
   text-decoration: none;
   font-weight: bolder;
   transition: 0.2s ease-out;
+  font-family: "Delius", cursive;
 }
 
 header a:hover {
