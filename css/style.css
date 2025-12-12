@@ -1,188 +1,201 @@
 /* Fondo general */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Mallanna", sans-serif; /*parrafo */
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mallanna", sans-serif; /*parrafo */
 }
 body {
-  padding: 0;
-  margin: 0;
-  background-color: #fdf0db;
-  font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #fdf0db;
+    font-family: Arial, sans-serif;
 }
+
+/* HEADER (Asumo que está en header.css y es correcto) */
+
+/* --- GENERAL (Resto de la página) --- */
 
 /* HERO (imagen + textos encima) */
 .hero {
-  position: relative;
-  width: 100%;
-  height: 600px;
-  overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
 }
 
 .hero .imagen {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .hero .imagen img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
 }
 
 /* Texto principal sobre la imagen */
 .titles {
-  position: absolute;
-  top: 30%;
-  left: 8%;
-  color: white;
-  z-index: 10;
-  max-width: 700px;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    color: white;
+    z-index: 10;
+    max-width: 700px;
 }
 
 .titles h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.8);
-  line-height: 1.2;
-  margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.8);
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
 
 .text {
-  display: block;
-  font-size: 1.8rem;
-  font-weight: normal;
-  margin-top: 10px;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-top: 10px;
 }
 
 /* Botón */
 .boton {
-  margin-top: 25px;
-  padding: 14px 30px;
-  background-color: #d19a63;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  font-weight: 600;
+    margin-top: 25px;
+    padding: 14px 30px;
+    background-color: #d19a63;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
 }
 
 .boton:hover {
-  background-color: #b8814d;
+    background-color: #b8814d;
 }
 
 /* Sección "our speciality" */
 .espacio {
-  padding: 60px 20px;
-  background-color: bisque;
-  text-align: center;
-  position: relative;
+    padding: 60px 20px 100px 20px;
+    background-color: bisque;
+    text-align: center;
+    position: relative;
+    min-height: 600px;
 }
 
 .title2 {
-  color: #2c1810;
-  font-size: 3rem;
-  margin: 0 0 40px 0;
-  font-weight: bold;
-  position: relative;
-  display: flex;
-  padding-left: 170px;
-  /* Sin position absolute - fluye natural */
+    color: #2c1810;
+    font-size: 3rem;
+    margin: 0 0 40px 0;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 170px;
 }
 
 .seleccion {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  padding: 0;
-}
-
-.seleccion img {
-  width: 300px;
-  height: 300px;
-  border-radius: 15px;
-  object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s;
-  margin: 0;
-}
-
-.seleccion img:hover {
-  transform: scale(1.05);
-}
-
-/* Sección sabores sensacionales */
-
-
-.imagenes2{
     display: flex;
-    gap: -15px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 30px;
+    margin-bottom: 50px;
     padding: 0;
 }
-.sabores {
-  padding: 60px 20px;
-  background-color:#B8CDB4;
+
+.seleccion img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    margin: 0;
+    display: block;
 }
 
-.sabores h2 {
-  font-size: 2.3rem;
-  margin-bottom: 40px;
-  color: #2c1810;
-  padding-left: 197px;
+.seleccion img:hover {
+    transform: scale(1.05);
+}
+
+/* Sección sabores sensacionales */
+.sabores {
+    padding: 60px 20px;
+    background-color: #B8CDB4;
+    text-align: center;
+    margin-top: 0;
+    position: relative;
+}
+
+.sabores h2,
+.title3 {
+    font-size: 2.3rem;
+    margin-bottom: 40px;
+    color: #2c1810;
+    text-align: left;
+    padding-left: 197px;
+}
+
+.imagenes2 {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 0;
 }
 
 .sabor-item {
-  display: inline-block;
-  margin: 20px;
-  text-align: center;
-  box-shadow: black 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .sabor-item img {
-  width: 280px;
-  height: 280px;
-  border-radius: 10px;
-  box-shadow: black 0px 4px 8px rgba(0, 0, 0, 0.2);
-  object-fit: cover;
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    display: block;
 }
 
 .sabor-item p {
-  margin-top: 10px;
-  font-size: 1.2rem;
-  color: #2c1810;
+    margin-top: 10px;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #2c1810;
 }
+
 /* CSS UBICACION */
-.ubicacion{
-  display: grid;
-  grid-template-columns: 1fr auto;
-  background-color: #d19a63;
-/*   margin: 4rem; */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.ubicacion {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: #d19a63;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.ubicacion h1{
-  font-size: 50px;
-  padding: 3rem 2rem 0 2rem;
+
+.ubicacion h1 {
+    font-size: 50px;
+    padding: 3rem 2rem 0 2rem;
 }
-.contenedor-izquierdo-ubicacion{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
+.contenedor-izquierdo-ubicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.contenedor-izquierdo-ubicacion button{
+
+.contenedor-izquierdo-ubicacion button {
     font-size: 25px;
     padding: 8px 40px;
     line-height: 1;
@@ -193,199 +206,327 @@ body {
     margin: 1rem 0 4rem 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.contenedor-izquierdo-ubicacion button:hover{
-    transform: scale(1.05)
+
+.contenedor-izquierdo-ubicacion button:hover {
+    transform: scale(1.05);
 }
+
+/* --------------------------------- */
+/* ☕ NOVEDADES CSS CORREGIDO ☕ */
+/* --------------------------------- */
+.historia {
+    width: 100%;
+    height: 100%; /* Cubre la altura del main */
+    max-width: none; /* Permitir que ocupe todo el ancho */
+    min-height: 350px;
+    margin-top: 0; /* Eliminar el margen negativo */
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    padding-right: 0; /* Eliminar padding innecesario */
+}
+
+.title-novedades {
+    position: absolute;
+    bottom: 20px; /* Posicionado desde abajo del main */
+    left: 50%;
+    transform: translateX(-50%); /* Centrado perfecto */
+    font-size: 3.5rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+/* Título de la sección de historias */
+.title-2 {
+    font-size: 2.5rem;
+    margin: 2rem auto;
+    padding-left: 0;
+    text-align: center;
+    color: #2c1810;
+}
+
+/* Contenedor de las historias (el <picture>) */
+.posiciones {
+    display: flex;
+    margin-top: 0; /* Ajuste: El margen negativo estaba rompiendo el flujo */
+    flex-direction: column;
+    align-items: center; /* Centra los bloques de noticias */
+    gap: 30px; /* Espacio entre las noticias */
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+/* Contenedor de Imagen y Texto para cada noticia */
+.posiciones > div {
+    max-width: 600px; /* Ancho máximo de la tarjeta de noticia */
+    width: 90%;
+    margin: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Imágenes dentro de las noticias */
+.granos-img, .postres {
+    width: 100%;
+    height: auto;
+    max-width: none; /* Permitir que crezcan al 100% del contenedor */
+    margin-top: 0;
+    border-radius: 0;
+    display: block;
+}
+
+/* Texto de las noticias */
+.text-novedades {
+    font-size: 1.2rem;
+    margin-top: 0; /* Ajuste */
+    padding: 15px 20px; /* Ajuste de padding */
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(255, 255, 255);
+    border: solid 2px black;
+    border-top: none; /* Eliminar el borde superior duplicado con la imagen */
+    border-radius: 0px 0px 20px 20px;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    box-sizing: border-box;
+}
+
+.text-novedades strong {
+    font-weight: normal; /* Para que no sea tan pesado dentro del párrafo */
+}
+
 /* --------------------------------- */
 /* 📱 RESPONSIVE CSS */
 /* --------------------------------- */
 
 /* Tablets grandes */
 @media screen and (max-width: 1024px) {
-  .hero {
-    height: 500px;
-  }
-  
-  .titles h1 {
-    font-size: 2.5rem;
-  }
-  
-  .text {
-    font-size: 1.5rem;
-  }
-  
-  .title2 {
-    font-size: 2.5rem;
-  }
-  
-  .seleccion img {
-    width: 280px;
-    height: 280px;
-  }
-  .ubicacion iframe{
-    max-width: 500px;
-  }
+    .hero {
+        height: 500px;
+    }
+    
+    .titles h1 {
+        font-size: 2.5rem;
+    }
+    
+    .text {
+        font-size: 1.5rem;
+    }
+    
+    .title2 {
+        font-size: 2.5rem;
+    }
+    
+    .seleccion img {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .ubicacion iframe {
+        max-width: 500px;
+    }
 }
 
 /* Tablets medianas */
 @media screen and (max-width: 768px) {
-  .hero {
-    height: 400px;
-  }
-  
-  .titles {
-    top: 25%;
-    left: 6%;
-    max-width: 85%;
-  }
-  
-  .titles h1 {
-    font-size: 2rem;
-  }
-  
-  .text {
-    font-size: 1.3rem;
-  }
-  
-  .boton {
-    font-size: 16px;
-    padding: 12px 24px;
-  }
-  
-  .espacio {
-    padding: 40px 15px;
-  }
-  
-  .title2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-  }
-  
-  .seleccion {
-    gap: 20px;
-  }
-  
-  .seleccion img {
-    width: 45%;
-    height: auto;
-    aspect-ratio: 1;
-    min-width: 200px;
-    max-width: 250px;
-  }
-  
-  .sabores {
-    padding: 40px 15px;
-  }
-  
-  .sabores h2 {
-    font-size: 2rem;
-  }
-  .ubicacion iframe{
-    max-width: 300px;
-  }
+    .hero {
+        height: 400px;
+    }
+    
+    .titles {
+        top: 25%;
+        left: 6%;
+        max-width: 85%;
+    }
+    
+    .titles h1 {
+        font-size: 2rem;
+    }
+    
+    .text {
+        font-size: 1.3rem;
+    }
+    
+    .boton {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+    
+    .espacio {
+        padding: 40px 15px;
+    }
+    
+    .title2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .seleccion {
+        gap: 20px;
+    }
+    
+    .seleccion img {
+        width: 45%;
+        height: auto;
+        aspect-ratio: 1;
+        min-width: 200px;
+        max-width: 250px;
+    }
+    
+    .sabores {
+        padding: 40px 15px;
+    }
+    
+    .sabores h2 {
+        font-size: 2rem;
+    }
+    
+    .ubicacion iframe {
+        max-width: 300px;
+    }
 }
 
 /* Móviles grandes */
 @media screen and (max-width: 480px) {
-  .hero {
-    height: 350px;
-  }
-  
-  .titles {
-    top: 20%;
-    left: 5%;
-    max-width: 90%;
-  }
-  
-  .titles h1 {
-    font-size: 1.5rem;
-  }
-  
-  .text {
-    font-size: 1.1rem;
-  }
-  
-  .boton {
-    font-size: 14px;
-    padding: 10px 20px;
-    margin-top: 15px;
-  }
-  
-  .espacio {
-    padding: 30px 10px;
-  }
-  
-  .title2 {
-    font-size: 1.8rem;
-    margin-bottom: 25px;
-  }
-  
-  .seleccion {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .seleccion img {
-    width: 85%;
-    max-width: 300px;
-    margin: 0 auto;
-  }
-  
-  .sabores {
-    padding: 30px 10px;
-  }
-  
-  .sabores h2 {
-    font-size: 1.8rem;
-  }
-  
-  .sabor-item {
-    margin: 15px 10px;
-  }
-  
-  .sabor-item img {
-    width: 150px;
-    height: 150px;
-  }
-  
-  .sabor-item p {
-    font-size: 1rem;
-  }
+    .hero {
+        height: 350px;
+    }
+
+    .titles {
+        top: 20%;
+        left: 5%;
+        max-width: 90%;
+    }
+
+    .titles h1 {
+        font-size: 1.5rem;
+    }
+
+    .text {
+        font-size: 1.1rem;
+    }
+
+    .boton {
+        font-size: 14px;
+        padding: 10px 20px;
+        margin-top: 15px;
+    }
+
+    .espacio {
+        padding: 30px 10px;
+    }
+
+    .title2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    .seleccion {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .seleccion img {
+        width: 90%;
+        max-width: 280px;
+    }
+    
+    .sabores h2 {
+        font-size: 1.5rem;
+    }
 }
 
-/* Móviles pequeños */
-@media screen and (max-width: 375px) {
-  .hero {
-    height: 300px;
-  }
-  
-  .titles {
-    top: 18%;
-  }
-  
-  .titles h1 {
-    font-size: 1.3rem;
-  }
-  
-  .text {
-    font-size: 1rem;
-  }
-  
-  .boton {
-    font-size: 13px;
-    padding: 8px 18px;
-  }
-  
-  .title2 {
-    font-size: 1.5rem;
-  }
-  
-  .seleccion img {
-    width: 90%;
-    max-width: 280px;
-  }
-  
-  .sabores h2 {
-    font-size: 1.5rem;
-  }
+/* FOOTER */
+.site-footer {
+    background-color: #704810;
+    color: #ffe494;
+    padding: 40px 20px 20px;
+    font-size: 14px;
+}
+
+.site-footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.site-footer__column {
+    flex: 1 1 200px;
+}
+
+.site-footer__title {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.site-footer__subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.site-footer__text {
+    margin: 4px 0;
+    line-height: 1.4;
+}
+
+.site-footer__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-footer__list-item {
+    margin-bottom: 6px;
+}
+
+.site-footer__link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.site-footer__bottom {
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    padding-top: 12px;
+    text-align: center;
+}
+
+.site-footer__bottom-text {
+    margin: 0;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+/* Responsivo: ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 30px 16px 16px;
+    }
+
+    .site-footer__container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .site-footer__column {
+        flex: 1 1 100%;
+    }
+
+    .site-footer__title {
+        font-size: 18px;
+    }
+
+    .site-footer__subtitle {
+        font-size: 15px;
+    }
 }
