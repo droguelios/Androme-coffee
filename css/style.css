@@ -82,10 +82,11 @@ body {
 
 /* Sección "our speciality" */
 .espacio {
-    padding: 60px 20px;
+    padding: 60px 20px 100px 20px;
     background-color: bisque;
     text-align: center;
     position: relative;
+    min-height: 600px;
 }
 
 .title2 {
@@ -93,9 +94,8 @@ body {
     font-size: 3rem;
     margin: 0 0 40px 0;
     font-weight: bold;
-    position: relative;
-    display: flex;
-    padding-left: 170px; /* Sin position absolute - fluye natural */
+    text-align: left;
+    padding-left: 170px;
 }
 
 .seleccion {
@@ -105,6 +105,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 30px;
+    margin-bottom: 50px;
     padding: 0;
 }
 
@@ -116,6 +117,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
     margin: 0;
+    display: block;
 }
 
 .seleccion img:hover {
@@ -123,41 +125,47 @@ body {
 }
 
 /* Sección sabores sensacionales */
+.sabores {
+    padding: 60px 20px;
+    background-color: #B8CDB4;
+    text-align: center;
+    margin-top: 0;
+    position: relative;
+}
+
+.sabores h2,
+.title3 {
+    font-size: 2.3rem;
+    margin-bottom: 40px;
+    color: #2c1810;
+    text-align: left;
+    padding-left: 197px;
+}
+
 .imagenes2 {
     display: flex;
-    gap: -15px;
+    gap: 30px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     margin-top: 30px;
     padding: 0;
 }
 
-.sabores {
-    padding: 60px 20px;
-    background-color: #B8CDB4;
-}
-
-.sabores h2 {
-    font-size: 2.3rem;
-    margin-bottom: 40px;
-    color: #2c1810;
-    padding-left: 197px;
-}
-
 .sabor-item {
-    display: inline-block;
+    display: block;
     margin: 20px;
     text-align: center;
-    box-shadow: black 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .sabor-item img {
     width: 280px;
     height: 280px;
     border-radius: 10px;
-    box-shadow: black 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     object-fit: cover;
+    display: block;
 }
 
 .sabor-item p {
@@ -172,7 +180,6 @@ body {
     display: grid;
     grid-template-columns: 1fr auto;
     background-color: #d19a63;
-    /* margin: 4rem; */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -201,21 +208,12 @@ body {
 }
 
 .contenedor-izquierdo-ubicacion button:hover {
-    transform: scale(1.05)
+    transform: scale(1.05);
 }
-
 
 /* --------------------------------- */
 /* ☕ NOVEDADES CSS CORREGIDO ☕ */
 /* --------------------------------- */
-
-/* Contenedor principal de la cabecera de novedades (el <main>) */
-main {
-    position: relative; /* Esencial para el posicionamiento del título */
-    height: 400px; /* Altura de la cabecera */
-    overflow: hidden;
-}
-
 .historia {
     width: 100%;
     height: 100%; /* Cubre la altura del main */
@@ -298,126 +296,96 @@ main {
 .text-novedades strong {
     font-weight: normal; /* Para que no sea tan pesado dentro del párrafo */
 }
-/* CSS UBICACION */
-.ubicacion{
-  display: grid;
-  grid-template-columns: 1fr auto;
-  background-color: #d19a63;
-/*   margin: 4rem; */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.ubicacion h1{
-  font-size: 50px;
-  padding: 3rem 2rem 0 2rem;
-}
-.contenedor-izquierdo-ubicacion{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.contenedor-izquierdo-ubicacion button{
-    font-size: 25px;
-    padding: 8px 40px;
-    line-height: 1;
-    background-color: #B8CDB4;
-    border-radius: 50px;
-    border: none;
-    width: 100px;
-    margin: 1rem 0 4rem 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.contenedor-izquierdo-ubicacion button:hover{
-    transform: scale(1.05)
-}
+
 /* --------------------------------- */
 /* 📱 RESPONSIVE CSS */
 /* --------------------------------- */
-/* ... (El resto del código Responsive se mantiene igual, ya que no tenía errores) ... */
 
 /* Tablets grandes */
 @media screen and (max-width: 1024px) {
-  .hero {
-    height: 500px;
-  }
-  
-  .titles h1 {
-    font-size: 2.5rem;
-  }
-  
-  .text {
-    font-size: 1.5rem;
-  }
-  
-  .title2 {
-    font-size: 2.5rem;
-  }
-  
-  .seleccion img {
-    width: 280px;
-    height: 280px;
-  }
-  .ubicacion iframe{
-    max-width: 500px;
-  }
+    .hero {
+        height: 500px;
+    }
+    
+    .titles h1 {
+        font-size: 2.5rem;
+    }
+    
+    .text {
+        font-size: 1.5rem;
+    }
+    
+    .title2 {
+        font-size: 2.5rem;
+    }
+    
+    .seleccion img {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .ubicacion iframe {
+        max-width: 500px;
+    }
 }
 
 /* Tablets medianas */
 @media screen and (max-width: 768px) {
-  .hero {
-    height: 400px;
-  }
-  
-  .titles {
-    top: 25%;
-    left: 6%;
-    max-width: 85%;
-  }
-  
-  .titles h1 {
-    font-size: 2rem;
-  }
-  
-  .text {
-    font-size: 1.3rem;
-  }
-  
-  .boton {
-    font-size: 16px;
-    padding: 12px 24px;
-  }
-  
-  .espacio {
-    padding: 40px 15px;
-  }
-  
-  .title2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-  }
-  
-  .seleccion {
-    gap: 20px;
-  }
-  
-  .seleccion img {
-    width: 45%;
-    height: auto;
-    aspect-ratio: 1;
-    min-width: 200px;
-    max-width: 250px;
-  }
-  
-  .sabores {
-    padding: 40px 15px;
-  }
-  
-  .sabores h2 {
-    font-size: 2rem;
-  }
-  .ubicacion iframe{
-    max-width: 300px;
-  }
+    .hero {
+        height: 400px;
+    }
+    
+    .titles {
+        top: 25%;
+        left: 6%;
+        max-width: 85%;
+    }
+    
+    .titles h1 {
+        font-size: 2rem;
+    }
+    
+    .text {
+        font-size: 1.3rem;
+    }
+    
+    .boton {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+    
+    .espacio {
+        padding: 40px 15px;
+    }
+    
+    .title2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .seleccion {
+        gap: 20px;
+    }
+    
+    .seleccion img {
+        width: 45%;
+        height: auto;
+        aspect-ratio: 1;
+        min-width: 200px;
+        max-width: 250px;
+    }
+    
+    .sabores {
+        padding: 40px 15px;
+    }
+    
+    .sabores h2 {
+        font-size: 2rem;
+    }
+    
+    .ubicacion iframe {
+        max-width: 300px;
+    }
 }
 
 /* Móviles grandes */
@@ -460,97 +428,97 @@ main {
         gap: 15px;
     }
 
-  .seleccion img {
-    width: 90%;
-    max-width: 280px;
-  }
-  
-  .sabores h2 {
-    font-size: 1.5rem;
-  }
-}
-
-.site-footer {
-      background-color: #704810;
-      color: #ffe494;
-      padding: 40px 20px 20px;
-       font-size: 14px;
+    .seleccion img {
+        width: 90%;
+        max-width: 280px;
     }
     
+    .sabores h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* FOOTER */
+.site-footer {
+    background-color: #704810;
+    color: #ffe494;
+    padding: 40px 20px 20px;
+    font-size: 14px;
+}
+
+.site-footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.site-footer__column {
+    flex: 1 1 200px;
+}
+
+.site-footer__title {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.site-footer__subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.site-footer__text {
+    margin: 4px 0;
+    line-height: 1.4;
+}
+
+.site-footer__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-footer__list-item {
+    margin-bottom: 6px;
+}
+
+.site-footer__link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.site-footer__bottom {
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    padding-top: 12px;
+    text-align: center;
+}
+
+.site-footer__bottom-text {
+    margin: 0;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+/* Responsivo: ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 30px 16px 16px;
+    }
+
     .site-footer__container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      gap: 32px;
-      justify-content: space-between;
-      flex-wrap: wrap;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .site-footer__column {
-      flex: 1 1 200px;
-    }
-
-    .site-footer__title {
-      margin-top: 0;
-      margin-bottom: 12px;
-      font-size: 20px;
-      font-weight: 700;
-    }
-
-    .site-footer__subtitle {
-      margin-top: 0;
-      margin-bottom: 10px;
-      font-size: 16px;
-      font-weight: 600;
-    }
-
-    .site-footer__text {
-         margin: 4px 0;
-         line-height: 1.4;
-    }
-
-    .site-footer__list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .site-footer__list-item {
-      margin-bottom: 6px;
-    }
-
-    .site-footer__link {
-      color: inherit;
-      text-decoration: none;
-      transition: color 0.2s ease, text-decoration 0.2s ease;
-    }
-
-    .site-footer__bottom {
-      border-top: 1px solid #333;
-      margin-top: 20px;
-      padding-top: 12px;
-      text-align: center;
-    }
-
-    .site-footer__bottom-text {
-        margin: 0;
-      font-size: 12px;
-      color: #b0b0b0;
-    }
-
-    /* Responsivo: ajustes para pantallas pequeñas */
-    @media (max-width: 768px) {
-        .site-footer {
-          padding: 30px 16px 16px;
-    }
-
-    .site-footer__container {
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .site-footer__column {
-        
         flex: 1 1 100%;
     }
 
