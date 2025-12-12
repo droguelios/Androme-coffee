@@ -15,7 +15,7 @@ pero por custiones de tiempo y no tener backend decidimos dejarlo asi
 somos un equipo de 4 pero nuestra 4 miembro tiene que trabajar y por eso le dejamos el footer
 el footer como pueden ver tiene todo la infomacion numero ,correo ,dirrecion y marca de agua para que algun tonto no se ponga a robar ideas 
 (aunque nosotros nos basamos en starbucks asi que no importa)
-
+<img width="1024" height="1024" alt="Gemini_Generated_Image_hevy9ohevy9ohevy" src="https://github.com/user-attachments/assets/feabdb02-ad73-4a78-8458-469e75317f01" />
 
 
 
