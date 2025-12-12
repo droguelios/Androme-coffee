@@ -107,3 +107,10 @@ header a:hover {
     gap: 0.5rem;
   }
 }
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff; /* o el color que estés usando */
+}
